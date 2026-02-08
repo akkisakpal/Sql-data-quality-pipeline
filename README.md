@@ -54,5 +54,16 @@ A simplified flow would be:
 This approach helps prevent incorrect or inconsistent data from impacting
 dashboards, reports, and business decisions.
 
+## Interview Scenarios
+
+- If validation checks fail, the pipeline would flag affected records
+  for review instead of allowing them into downstream analytics.
+
+- Critical issues (missing keys, broken relationships) would block
+  further processing, while non-critical issues could be logged
+  as warnings.
+
+- Validation results can be shared with upstream teams to help
+  improve data quality at the source.
 
 
