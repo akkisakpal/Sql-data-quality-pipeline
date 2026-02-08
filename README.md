@@ -26,3 +26,17 @@ The project focuses on:
 ## Status
 Project initialized. SQL validation logic will be added incrementally.
 
+## Dataset Description
+The project uses a simplified analytics dataset representing an
+order-processing system commonly found in retail or e-commerce domains.
+
+The core tables include:
+
+- `customers` – customer master data
+- `orders` – transactional order records
+- `order_items` – individual items per order
+
+This structure allows demonstration of both record-level and
+cross-table data quality validations.
+
+
