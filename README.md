@@ -39,4 +39,20 @@ The core tables include:
 This structure allows demonstration of both record-level and
 cross-table data quality validations.
 
+## How This Fits Into an ETL Pipeline
+
+In a typical analytics pipeline, these SQL validations would be executed
+after data ingestion and before downstream transformations or reporting.
+
+A simplified flow would be:
+
+1. Ingest raw data from source systems
+2. Run data quality and validation checks using SQL
+3. Review or log validation failures
+4. Allow clean data to proceed to transformation and analytics layers
+
+This approach helps prevent incorrect or inconsistent data from impacting
+dashboards, reports, and business decisions.
+
+
 
